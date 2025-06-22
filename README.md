@@ -3,7 +3,7 @@
 A modern, interactive CV (Curriculum Vitae) builder built with React and Vite.
 
 # Live demo via cloudflare
-https://github.com/astrostar41ust/Project-CV-Application
+[https://github.com/astrostar41ust/Project-CV-Application](https://dff39f6d.project-cv-application-4ug.pages.dev/)
 
 ## Features
 - **Personal Information Form**: Enter your name, email, and phone number.
