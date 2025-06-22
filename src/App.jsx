@@ -7,7 +7,7 @@ import { useState } from "react";
 
 function App() {
   const [personalInfo, setPersonalInfo] = useState({ fname: "", lname: "" , email: "", phone: ''});
-  const [educationalExperience, setEducationalExperience] = useState([{id: crypto.randomUUID(), schoolName: '', titleOfstudy: '', dateOfStudy:''}])
+  const [educationalExperience, setEducationalExperience] = useState([{id: crypto.randomUUID(), schoolName: '', titleOfStudy: '', dateOfStudy:''}])
   const [practicalExperience, setPracticalExperience] = useState([{id: crypto.randomUUID(), companyName: '', positionTitle: '', mainResponsibilities:'', startDate: '', endDate: ''}])
   
 
@@ -37,7 +37,7 @@ function App() {
   }
 
   const handleAddEducation = () => {
-    setEducationalExperience([...educationalExperience, {id: crypto.randomUUID(), schoolName: '', titleOfstudy: '', dateOfStudy:''}])
+    setEducationalExperience([...educationalExperience, {id: crypto.randomUUID(), schoolName: '', titleOfStudy: '', dateOfStudy:''}])
   }
 
   const handleDeleteEducation = (id) => {
@@ -84,7 +84,7 @@ function App() {
         <PracticalExperience practicalExperience={practicalExperience} onChange={handlePracticalExperienceChange} onAdd={handleAddPractice} onDelete={handleDeletePractice}></PracticalExperience>
       </main>
       <aside>
-        <CvPaper></CvPaper>
+        <CvPaper personalInfo={personalInfo} educationalExperience={educationalExperience} practicalExperience={practicalExperience}></CvPaper>
       </aside>
     </div>
   );

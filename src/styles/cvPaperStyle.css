@@ -1,8 +1,99 @@
-
-
 .blankPage {
     display: flex;
-    flex: 2 1 auto;
-    color: black;
-    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    max-width: 700px;
+    min-width: 700px;
+    min-height: 1000px;
+    margin: 40px auto;
+    padding: 40px 32px;
+    color: #222;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    border: 1px solid #e0e0e0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    overflow: hidden;
+}
+
+.cv-personal {
+    text-align: center;
+    margin-bottom: 32px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 16px;
+}
+.cv-personal h1 {
+    font-size: 2.2rem;
+    margin: 0 0 8px 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.cv-personal p {
+    margin: 2px 0;
+    font-size: 1.05rem;
+}
+
+.cv-education, .cv-practical {
+    width: 100%;
+    margin-bottom: 28px;
+}
+.cv-education h2, .cv-practical h2 {
+    font-size: 1.3rem;
+    color: #444;
+    margin-bottom: 10px;
+    border-left: 4px solid #1976d2;
+    padding-left: 8px;
+}
+.cv-education-item, .cv-practical-item {
+    margin-bottom: 18px;
+    padding: 10px 0 10px 12px;
+    border-left: 2px solid #bdbdbd;
+}
+.cv-education-item h3, .cv-practical-item h3 {
+    margin: 0 0 4px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.cv-education-item p, .cv-practical-item p {
+    margin: 2px 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.cv-contact {
+    width: 100%;
+    margin-bottom: 28px;
+    background: #fafbfc;
+    border-radius: 6px;
+    padding: 16px 18px 10px 18px;
+    box-sizing: border-box;
+    border-left: 4px solid #1976d2;
+}
+.cv-contact h2 {
+    font-size: 1.3rem;
+    color: #1976d2;
+    margin-bottom: 10px;
+    padding-left: 8px;
+}
+.cv-contact-content p {
+    margin: 2px 0;
+    font-size: 1.05rem;
+    color: #333;
+}
+.cv-education-list, .cv-practical-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+input[type="text"] {
+    color: #111;
+}
+.personalInfo {
+    margin-top: 32px;
+}
+
+.cv-practical-item, .cv-education-item {
+    display: flex;
+    flex-direction: column;
 }

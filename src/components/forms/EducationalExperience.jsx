@@ -7,20 +7,18 @@ function EducationalExperience({
   onDelete,
 }) {
   return (
-    <div style={{display:'flex', flexDirection:'column' }}>
-      {educationalExperience.map((school) => {
-        return (
+    <div style={{display:'flex', flexDirection:'column'}}>
+      {educationalExperience.map((school) => (
+        <div key={school.id} style={{display:'flex', flexDirection:'column', gap:'4px', marginBottom:'12px'}}>
           <EducationalItem
-            key={school.id}
             school={school}
             onChange={(event) => onChange(school.id, event)}
             onDelete={() => onDelete(school.id)}
-          ></EducationalItem>
-        );
-      })}
-      <button type="button" onClick={onAdd}>
-        Add Education
-      </button>
+          />
+          
+        </div>
+      ))}
+      <button type="button" onClick={onAdd} style={{marginBottom: '40px', alignSelf:'flex-end'}}>Add Education</button>
     </div>
   );
 }

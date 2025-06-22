@@ -3,21 +3,18 @@ import PracticalItem from './PracticalItem';
 
 function PracticalExperience({practicalExperience, onChange, onAdd, onDelete}) {
   return (
-   
-    <div style={{display:'flex', flexDirection:'column' }}>
-      {practicalExperience.map((practical) => {
-        return (
+    <div style={{display:'flex', flexDirection:'column'}}>
+      {practicalExperience.map((practical) => (
+        <div key={practical.id} style={{display:'flex', flexDirection:'column', gap:'4px', marginBottom:'12px'}}>
           <PracticalItem
-            key={practical.id}
             practical={practical}
             onChange={(event) => onChange(practical.id, event)}
             onDelete={() => onDelete(practical.id)}
-          ></PracticalItem>
-        );
-      })}
-      <button type="button" onClick={onAdd}>
-        Add Practical Experience
-      </button>
+          />
+          
+        </div>
+      ))}
+      <button type="button" onClick={onAdd} style={{marginBottom: '40px', alignSelf:'flex-end'}}>Add Practical</button>
     </div>
   )
 }

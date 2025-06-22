@@ -3,7 +3,7 @@ import "../../styles/forms/formStyle.css";
 
 function PersonalInfomation({personalInfo, handlePersonalInfoChange}) {
   return (
-    <form>
+    <form className="personalInfo">
       <fieldset>
         <legend>Personal Infomation</legend>
         <label htmlFor="fname">First name : </label>
@@ -14,7 +14,6 @@ function PersonalInfomation({personalInfo, handlePersonalInfoChange}) {
         <input type="email" id="email" name="email" value={personalInfo.email}  onChange={handlePersonalInfoChange}></input>
         <label htmlFor="phone">Phone number : </label>
         <input type="tel" id="phone" name="phone" value={personalInfo.phone}  onChange={handlePersonalInfoChange}></input>
-        <button type="button">Submit</button>
       </fieldset>
     </form>
   );
