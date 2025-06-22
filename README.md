@@ -1,12 +1,20 @@
-# React + Vite
+# Project CV Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, interactive CV (Curriculum Vitae) builder built with React and Vite.
 
-Currently, two official plugins are available:
+## Features
+- **Personal Information Form**: Enter your name, email, and phone number.
+- **Education Section**: Add, edit, and remove multiple educational experiences.
+- **Practical Experience Section**: Add, edit, and remove multiple work experiences.
+- **Live CV Preview**: See your CV update in real time as you fill out the forms.
+- **Modern UI/UX**: Clean, print-friendly design with responsive layouts and accessible forms.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## What I Learned
+- **React State Management**: Used `useState` to manage complex, nested form data and lists.
+- **Controlled Components**: Ensured all form inputs are controlled for predictable behavior and validation.
+- **Component Composition**: Broke the UI into reusable components for forms and CV sections.
+- **Dynamic Rendering**: Rendered lists of education and experience dynamically, with add/remove functionality.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## License
+MIT
